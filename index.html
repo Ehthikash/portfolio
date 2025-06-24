@@ -1,184 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ehthikash R | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #e0eafc, #cfdef3);
-      color: #333;
-      line-height: 1.6;
-      scroll-behavior: smooth;
-    }
-    header {
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.3rem;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      padding: 2rem 4%;
-      background: white;
-      margin: 1rem auto;
-      max-width: 960px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      animation: fadeIn 1s ease;
-    }
-    h2 {
-      color: #0073e6;
-      margin-bottom: 1rem;
-    }
-    ul {
-      padding-left: 20px;
-      list-style: square;
-      margin-bottom: 1rem;
-    }
-    a {
-      color: #0073e6;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .contact-links a {
-      display: inline-block;
-      margin: 0.3rem 0.7rem 0 0;
-      padding: 0.4rem 0.7rem;
-      background: #0073e6;
-      color: white;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-    .contact-links a:hover {
-      background: #005bb5;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #333;
-      color: #fff;
-    }
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-      section {
-        padding: 1.5rem 5%;
-      }
-    }
-  </style>
+  <title>R Ehthikash | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <div class="container">
+      <h1>R Ehthikash</h1>
+      <p>Embedded Systems | Machine Learning | ECE @ VIT</p>
+      <a href="assets/resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+  </header>
 
-<header>
-  <h1>R Ehthikash</h1>
-  <p>ECE @ VIT | Embedded Systems | ML Enthusiast</p>
   <nav>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
-</header>
 
-<section id="education">
-  <h2>🎓 Education</h2>
-  <p><strong>Vellore Institute of Technology</strong><br>B.Tech in Electronics and Communication Engineering (2021–2025)<br>CGPA: 8.69</p>
-  <p><strong>Kendriya Vidyalaya</strong><br>Class XII (2020): 87.8%<br>Class X (2018): 84%</p>
-</section>
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>B.Tech in ECE at VIT Vellore, passionate about embedded systems, machine learning, and real-time systems integration.</p>
+    </div>
+  </section>
 
-<section id="experience">
-  <h2>💼 Experience</h2>
-  <p><strong>Intern @ ITI Limited, Bangalore</strong> (Sep–Oct 2023)</p>
-  <ul>
-    <li>Tested electronic components and systems.</li>
-    <li>Designed PCBs, worked on microcontroller setups.</li>
-    <li>Troubleshot issues in a live lab setting.</li>
-  </ul>
-  <p><strong>Event Committee @ Rivera Fest</strong> (Dec 2021–Feb 2022)</p>
-  <ul>
-    <li>Managed event logistics and volunteer training.</li>
-    <li>Handled venue prep and technical coordination.</li>
-  </ul>
-</section>
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>CAN Protocol for Vehicle Control:</strong> Embedded system with Arduino + MCP2515 for vehicle safety.</li>
+        <li><strong>Failure Prediction in Industrial Machinery:</strong> ML model with 97.9% accuracy using Gradient Boosting.</li>
+        <li><strong>Honey Adulteration Detection:</strong> Supervised ML on spectral data (92% accuracy).</li>
+        <li><strong>IoT-Based Traffic System:</strong> IR sensor-based smart city traffic management system.</li>
+      </ul>
+    </div>
+  </section>
 
-<section id="projects">
-  <h2>💡 Projects</h2>
-  <p><strong>CAN Protocol for Vehicle Control</strong></p>
-  <ul>
-    <li>Used Arduino + MCP2515 for real-time vehicle safety control.</li>
-    <li>Built speed/lane/collision detection system.</li>
-  </ul>
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <p>Java, Python, C++, C, R, Machine Learning, Deep Learning</p>
+      <p>MATLAB, LTspice, Packet Tracer, Keil, Netsim, Cadence, Optisystem</p>
+    </div>
+  </section>
 
-  <p><strong>Failure Prediction in Industrial Machinery</strong></p>
-  <ul>
-    <li>Achieved 97.9% accuracy with Gradient Boosting on failure datasets.</li>
-    <li>Used SMOTE for imbalance handling; strong ML pipeline.</li>
-  </ul>
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:ehthikash13@gmail.com">ehthikash13@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/ehthikash-r-87b98a24b" target="_blank">ehthikash-r</a></p>
+      <p>GitHub: <a href="https://github.com/Ehthikash" target="_blank">Ehthikash</a></p>
+      <p>LeetCode: <a href="https://leetcode.com/u/ehthikash/" target="_blank">ehthikash</a></p>
+    </div>
+  </section>
 
-  <p><strong>Honey Adulteration Detection</strong></p>
-  <ul>
-    <li>Built an ML model using spectral data to detect adulteration (92% accuracy).</li>
-  </ul>
-
-  <p><strong>IoT-Based Smart Traffic System</strong></p>
-  <ul>
-    <li>Controlled real-time traffic using IR sensors + embedded controllers.</li>
-  </ul>
-</section>
-
-<section id="skills">
-  <h2>🛠️ Skills & Certifications</h2>
-  <p><strong>Languages:</strong> Java, Python, C++, C, R</p>
-  <p><strong>ML/DL:</strong> Machine Learning, Deep Learning</p>
-  <p><strong>Tools:</strong> MATLAB, LTspice, Packet Tracer, Keil, Netsim, Cadence, Ansys</p>
-  <p><strong>Languages Known:</strong> English, Tamil, Hindi, Telugu, Spanish</p>
-  <p><strong>Certificates:</strong> ITI Internship, Python, Deep Learning</p>
-</section>
-
-<section id="contact">
-  <h2>📬 Contact & Profiles</h2>
-  <p>Email: <a href="mailto:ehthikash13@gmail.com">ehthikash13@gmail.com</a></p>
-  <p>Phone: +91 9025995827</p>
-  <div class="contact-links">
-    <a href="https://linkedin.com/in/ehthikash-r-87b98a24b/" target="_blank">LinkedIn</a>
-    <a href="https://github.com/Ehthikash" target="_blank">GitHub</a>
-    <a href="https://leetcode.com/u/ehthikash/" target="_blank">LeetCode</a>
-  </div>
-</section>
-
-<footer>
-  <p>© 2025 R Ehthikash. Built with ❤️ on GitHub Pages</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 R Ehthikash</p>
+  </footer>
 </body>
 </html>
-
